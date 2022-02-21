@@ -39,7 +39,7 @@ to start the game the config file needs to follow some rules else it will just r
 - press ESC to get to the pause menu
 - press ESC again to quit or return to continue the game
 
-**a valid config file...:**
+**a valid config file...**
 - ends on .cub
 - contains a ceiling and floor colour (C/F) in a format: "R,B,G"
 - contains a path to a texture for each wall and direction (NO/SO/WE/EA) (texture has to be a valid xpm file)
