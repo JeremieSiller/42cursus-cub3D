@@ -4,20 +4,22 @@
 
 1. [About](#about)
 2. [Description](#description)
-3. [Credits](#credits)
 4. [minilibX](#minilibx)
 5. [libft](#libft)
 
 
 ## About
-so_long is a project at 42 with the goal to create a really simple game. It is about learning how to use windows, events, colours and more.
+cub3d is a project of the 42 core curriculum with the purpose of learning about graphics, windows, events, colours and more.
+The task is to write a 3D game similar to [Wolfenstein 3D] using a raycasting algoritm.
 The school provides a small library to use which only contains some really basic functions. 
+
+<img width="1280" alt="Screen Shot 2022-02-21 at 5 27 20 PM" src="https://user-images.githubusercontent.com/83188617/154994520-509f68c9-8e98-4c28-96c5-98167b7b2758.png">
 
 **how to use:**
 
 Clone the repository:
 ```bash
-git clone --recursive https://github.com/JeremieSiller/so_long/
+git clone --recursive https://github.com/JeremieSiller/cub3d/
 ```
 run make to compile the programm 
 ```bash
@@ -25,33 +27,28 @@ make
 ```
 execute the programm with a .ber file
 ```bash
-./so_long map.ber
+./cub3D map.cub
 ```
-to start the game the map file needs to follow some rules else it will just return an error. (For more information look into [Description](#description))
+to start the game the config file needs to follow some rules else it will just return an error. (For more information look into [Description](#description))
 
 
 ## Description
 **how to play:**
 - use W A S D to move
-- collect all coins before going to the spaceship
-- if you try to fly away with the spaceship without collecting all coins you loose
-- press ESC or click the red cross to exit the window and the program
+- use the mouse to turn
+- press ESC to get to the pause menu
+- press ESC again to quit or return to continue the game
+
+**a valid config file contains:**
+- a ceiling and floor colour (C/F) in a format: "R,B,G"
+- a path to a texture for each wall and direction (NO/SO/WE/EA)
+- each texture has to be a valid xpm file
+- at the bottom of the file a valid map
 
 **a valid map...**
 - is sorrounded by walls (1)
-- contains at least one exit (E)
-- contains at least one coin (C)
-- contains exactly one player (P)
-
-
-## Credits
-
-**links to the used xpm files:**
-- exit.xpm : https://opengameart.org/content/64-x-64-animated-plane
-- background.xpm : https://opengameart.org/content/all-textures-for-the-labyrinth-of-the-fertile-void
-- collect.xpm : https://opengameart.org/content/gold-coin-0
-- player.xpm : https://opengameart.org/content/gangster-0
-- wall.xpm : https://opengameart.org/content/bricks-tiled-texture-64x64
+- contains exactly one player with its looking direction (N/W/E/S)
+- can contain some coins (C) and some empty space (0)
 
 
 ## miniLibX
@@ -62,3 +59,5 @@ https://github.com/42Paris/minilibx-linux
 ## libft
 the project uses the submodule libft which is an earlier project of the 42 core curriculum.
 You can find mine here: https://github.com/ayeCaptainJack/libft
+
+[Wolfenstein 3D]: https://en.wikipedia.org/wiki/Wolfenstein_3D
