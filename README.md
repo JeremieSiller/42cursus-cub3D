@@ -10,7 +10,7 @@
 
 ## About
 cub3d is a project of the 42 core curriculum with the purpose of learning about graphics, windows, events, colours and more.
-The task is to write a 3D game similar to [Wolfenstein 3D] using a raycasting algoritm.
+The task is to write a 3D game similar to [Wolfenstein 3D] using a raycasting algorithm.
 The school provides a small library to use which only contains some really basic functions. 
 
 <img width="1280" alt="Screen Shot 2022-02-21 at 5 27 20 PM" src="https://user-images.githubusercontent.com/83188617/154994520-509f68c9-8e98-4c28-96c5-98167b7b2758.png">
